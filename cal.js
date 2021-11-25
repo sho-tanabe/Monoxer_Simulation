@@ -24,13 +24,13 @@ $(function() {
 
 $(function(){
     $('select').change(function() {
-    var course_val = document.getElementById("course");
-    var gaku_class_val = document.getElementById("gaku_class");
-    var azukari_val = document.getElementById("azukari");
-    if(course_val == 1 && gaku_class == 1 && azukari_val == 1){
-        $("#result_zone").show("normal");
+    var course_val = document.getElementById("course").selectedIndex;
+    var gaku_class_val = document.getElementById("gaku_class").selectedIndex;
+    var azukari_val = document.getElementById("azukari").selectedIndex;
+    if(course_val == 0 || gaku_class == 0 || azukari_val == 0){
+        $("#result_zone").hide("normal");
      }else{
-         $("#result_zone").hide("normal");
+         $("#result_zone").show("normal");
     }
   }, false);
 });
