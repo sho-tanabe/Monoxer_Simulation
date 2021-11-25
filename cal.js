@@ -4,7 +4,7 @@ function update_field(){
     var gaku_class = $('[name="gaku_class"] option:selected').val();
     var azukari = $('[name="azukari"] option:selected').val();
     
-    var resultabout =  $('#course').val() * $('#gaku_class').val() * $('#azukari').val() ;
+    var resultabout =  Math.floor( $('#course').val() * $('#gaku_class').val() * $('#azukari').val() );
     var result = `${resultabout}円`;
     $('#monoxer_price').text(result);
     
