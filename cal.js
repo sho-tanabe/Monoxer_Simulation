@@ -8,6 +8,11 @@ function update_field(){
     var result = `${resultabout}円`;
     $('#monoxer_price').text(result);
     
+    var resultabout_intax =  resultabout * 1.10 ;
+    var result_intax = `(税込 ${resultabout_intax}円)`;
+    $('#monoxer_price_intax').text(result_intax);
+
+    
     var resultabout_day =  Math.floor( $('#course').val() * $('#gaku_class').val() * $('#azukari').val() / 30 );
     var result_day = `一日あたり 約 ${resultabout_day} 円`;
     $('#monoxer_price_day').text(result_day);
