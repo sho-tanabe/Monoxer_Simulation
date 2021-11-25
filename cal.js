@@ -20,3 +20,17 @@ $(function() {
     update_field();        
     });
 });
+
+
+$(function(){
+    $('select').change(function() {
+    var course_val = document.getElementById("course");
+    var gaku_class_val = document.getElementById("gaku_class");
+    var azukari_val = document.getElementById("azukari");
+    if(course_val == 1 && gaku_class == 1 && azukari_val == 1){
+        $("#result_zone").show("normal");
+     }else{
+         $("#result_zone").hide("normal");
+    }
+  }, false);
+});
