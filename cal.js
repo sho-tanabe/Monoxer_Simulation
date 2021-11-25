@@ -9,8 +9,17 @@ function update_field(){
     $('#monoxer_price').text(result);
 }
 
+/*
 $(function() {
   $('[name="course"]').on('keyup change', function() {
     update_field();
   });
+});
+*/
+
+
+$(function() {
+    $('select').change(function() {
+    update_field();        
+    });
 });
