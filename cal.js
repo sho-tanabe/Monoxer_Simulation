@@ -14,7 +14,7 @@ function update_field(){
 
     
     var resultabout_day =  Math.floor( $('#course').val() * $('#gaku_class').val() * $('#azukari').val() / 30 );
-    var result_day = `一日あたり 約${resultabout_day}円 です`;
+    var result_day = `一日あたり 約 ${resultabout_day} 円 です`;
     $('#monoxer_price_day').text(result_day);
     
     if(resultabout == 0){
