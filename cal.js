@@ -8,7 +8,7 @@ function update_field(){
     var result = `${resultabout}円`;
     $('#monoxer_price').text(result);
     
-    var resultabout_intax =  resultabout * 1.10 ;
+    var resultabout_intax =  Math.floor( resultabout * 1.10 );
     var result_intax = `(税込 ${resultabout_intax}円)`;
     $('#monoxer_price_intax').text(result_intax);
 
