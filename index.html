@@ -32,11 +32,11 @@
                 <div class="form-floating mx-auto">                           
                     <select id="course" class="form-select mx-auto" name="course" required>                               
                         <option selected></option>                                    
-                        <option value="1科目">1科目</option>                                    
-                        <option value="２科目">２科目</option>
-                        <option value="3科目">3科目</option>
-                        <option value="4科目">4科目</option>
-                        <option value="5科目">5科目</option>
+                        <option value="1200">1科目</option>                                    
+                        <option value="1000">２科目</option>
+                        <option value="900">3科目</option>
+                        <option value="800">4科目</option>
+                        <option value="700">5科目</option>
                     </select>                
                     <label for="course">                    
                         <font size="-1" color="#202020">希望の科目数</font>                
@@ -58,7 +58,7 @@
                 </div>
 <!---------------------------------------------------------------------------------->        
                 <div class="form-floating mx-auto">                           
-                    <select id="class" class="form-select mx-auto" name="class" required>                               
+                    <select id="azukari" class="form-select mx-auto" name="azukari" required>                               
                         <option selected></option>                                    
                         <option value="1">なし</option>                                    
                         <option value="0.9">週1回</option>
@@ -66,11 +66,14 @@
                         <option value="0.7">週3回</option>
                         <option value="0.6">週4回以上</option>
                     </select>                
-                    <label for="class">                    
+                    <label for="azukari">                    
                         <font size="-1" color="#202020">お預かりサポート利用回数</font>                
                     </label>
                 </div>                
-                
+<!---------------------------------------------------------------------------------->
+                    <p class="w-100 mx-3">料金(円)</p>
+                    <p class="w-75 mx-auto" id="monoxer_price" name="monoxer_price" type="number" value="0"></p>
+<!---------------------------------------------------------------------------------->                
 <!---------------------------------------------------------------------------------->        
                 <div class="alert alert-warning" role="alert">
                     <font size="-1">
@@ -280,6 +283,7 @@
     <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script><!--住所検索用(参考：https://www.whizz-tech.co.jp/1843/)-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><!--選択項目次第で入力項目を動的にする-->
 
+    <script src="cal.js"></script>
     <script src="liff.js"></script>
     <script src="index.js"></script>
 </body>
