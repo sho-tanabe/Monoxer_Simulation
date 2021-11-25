@@ -1,5 +1,10 @@
 function update_field(){    
-    var resultabout = Math.floor(  $('#course').val() * $('#class').val() * $('#azukari').val() );
+
+    var course = $('[name="course"] option:selected').val();/
+    var gaku_class = $('[name="gaku_class"] option:selected').val();/
+    var azukari = $('[name="azukari"] option:selected').val();/
+    
+    var resultabout =  $('#course').val() * $('#gaku_class').val() * $('#azukari').val() ;
     var result = `${resultabout}円`;
     $('#monoxer_price').text(result);
 }
