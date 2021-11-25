@@ -1,7 +1,7 @@
 function update_field(){    
     var resultabout = Math.floor(  $('#course').val() * $('#class').val() * $('#azukari').val() );
     var result = `${resultabout}円`;
-    $('#unitprice').text(result);
+    $('#monoxer_price').text(result);
 }
 
 $(function() {
