@@ -27,6 +27,7 @@ $(function(){
     var course_val = document.getElementById("course").selectedIndex;
     var gaku_class_val = document.getElementById("gaku_class").selectedIndex;
     var azukari_val = document.getElementById("azukari").selectedIndex;
+        window.alert(course_val);
     if(course_val == 0 || gaku_class_val == 0 || azukari_val == 0){
         $("#result_zone").hide("normal");
      }else{
