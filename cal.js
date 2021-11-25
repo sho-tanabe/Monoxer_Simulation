@@ -12,13 +12,11 @@ function update_field(){
     var result_day = `一日あたり 約 ${resultabout_day} 円`;
     $('#monoxer_price_day').text(result_day);
     
-    //追記
     if(resultabout == 0){
         $("#result_zone").hide("normal");
     }else{
         $("#result_zone").show("normal");
-    }
-    //追記終わり    
+    }    
 }
 
 
