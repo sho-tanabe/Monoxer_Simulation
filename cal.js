@@ -13,7 +13,7 @@ function update_field(){
     $('#monoxer_price_day').text(result_day);
     
     //追記
-    if(result == 0){
+    if(resultabout == 0){
         $("#result_zone").hide("normal");
     }else{
         $("#result_zone").show("normal");
