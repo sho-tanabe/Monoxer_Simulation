@@ -27,24 +27,3 @@ $(function() {
     update_field();        
     });
 });
-
-
-/*
-$(function(){
-    $('select').change(function() {
-    var course_val = document.getElementById("course").selectedIndex;
-    var gaku_class_val = document.getElementById("gaku_class").selectedIndex;
-    var azukari_val = document.getElementById("azukari").selectedIndex;
-    console.log(course_val);
-    console.log(gaku_class_val);
-    console.log(azukari_val);
-        if(course_val == 0 || gaku_class_val == 0 || azukari_val == 0){
-            $("#result_zone").hide("normal");
-            window.alert('hide');
-        }else{
-            $("#result_zone").show("normal");
-            window.alert('show');
-    }
-  }, false);
-});
-*/
