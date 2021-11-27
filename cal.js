@@ -3,8 +3,9 @@ function update_field(){
     var course = $('[name="course"] option:selected').val();
     var gaku_class = $('[name="gaku_class"] option:selected').val();
     var azukari = $('[name="azukari"] option:selected').val();
+    var kyodai = $('[name="kyodai"] option:selected').val();
     
-    var resultabout =  Math.floor( $('#course').val() * $('#gaku_class').val() * $('#azukari').val() );
+    var resultabout =  Math.floor( $('#course').val() * $('#gaku_class').val() * $('#azukari').val() * $('#kyodai').val() );
     var result = `${resultabout}円`;
     $('#monoxer_price').text(result);
     
@@ -13,7 +14,8 @@ function update_field(){
     $('#monoxer_price_intax').text(result_intax);
 
     
-    var resultabout_day =  Math.floor( $('#course').val() * $('#gaku_class').val() * $('#azukari').val() / 30 );
+//    var resultabout_day =  Math.floor( $('#course').val() * $('#gaku_class').val() * $('#azukari').val() / 30 );
+    var resultabout_day =  Math.floor( resultabout_intax / 30 );
     var result_day = `一日あたり 約 ${resultabout_day} 円 です`;
     $('#monoxer_price_day').text(result_day);
     
